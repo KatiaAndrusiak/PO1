@@ -9,7 +9,7 @@ public:
     QuantumWire(double dlug, int liczba): dlugosc(dlug),czastki(new bool[liczba]), liczbakw(liczba) 
     {
         for(int i=0; i<liczbakw; i++)
-            czastki[i]=rand()%2;
+            czastki[i] = rand()%2;
     }
     QuantumWire(const QuantumWire &wire);
     QuantumWire(QuantumWire &&wire);
