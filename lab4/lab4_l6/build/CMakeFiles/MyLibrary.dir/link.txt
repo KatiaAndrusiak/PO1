@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMyLibrary.a  CMakeFiles/MyLibrary.dir/src/matrix.cpp.o CMakeFiles/MyLibrary.dir/src/vector.cpp.o
+/usr/bin/ranlib libMyLibrary.a

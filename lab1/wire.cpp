@@ -3,18 +3,18 @@
 #include <iostream>
 
 
-QuantumWire::QuantumWire(const QuantumWire &wire)
+QuantumWire::QuantumWire(const QuantumWire & wire)
 {
     dlugosc=wire.dlugosc;
     liczbakw=wire.liczbakw;
-    czastki=new bool[liczbakw];
+    czastki=new bool [liczbakw];
     for(int i=0; i<liczbakw; i++){
     czastki[i]=wire.czastki[i];
     }
 }
 
 
- QuantumWire::QuantumWire(QuantumWire &&wire)
+ QuantumWire::QuantumWire (QuantumWire &&wire)
  {
     dlugosc=wire.dlugosc;
     wire.dlugosc=0;
@@ -57,7 +57,7 @@ QuantumWire::QuantumWire(const QuantumWire &wire)
         
         delete [] czastki;
         
-        dlugosc=wire.dlugosc;
+        dlugosc= wire.dlugosc;
         wire.dlugosc=0;
         liczbakw=wire.liczbakw;
         wire.liczbakw=0;
